@@ -664,10 +664,11 @@ const role = useTypewriter([
         <div style={{ marginTop: 40, display: "flex", gap: 14, flexWrap: "wrap", ...anim(.9) }}>
           <Btn href="#projects" primary>View Projects</Btn>
           <Btn href="#contact">Get in Touch →</Btn>
-          <Btn href="/Safdar_Azam_Resume.pdf">Resume ↓</Btn>
+          <Btn href="/SafdarAzamResume.pdf">Resume ↓</Btn>
 
 
         </div>
+        
 
         {/* Stack pills */}
         <div style={{ marginTop: 52, display: "flex", alignItems: "center", gap: 14, flexWrap: "wrap", ...anim(1.1) }}>
