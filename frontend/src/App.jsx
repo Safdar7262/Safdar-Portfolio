@@ -680,9 +680,9 @@ const role = useTypewriter([
       </div>
 
       {/* Profile photo */}
-      {/* <div style={{ ...anim(.4), flexShrink: 0 }}>
+     <div style={{ ...anim(.4), flexShrink: 0 }}>
         <img
-          src={profile?.avatarUrl || "D:\portfolio-updated\portfolio\frontend\src\assets\profile-photo.png"}
+          src="/profile-photo.png"
           alt={profile?.fullName ? `Portrait of ${profile.fullName}` : "Profile photo"}
           style={{
             width: "clamp(160px,22vw,260px)",
@@ -693,7 +693,7 @@ const role = useTypewriter([
             boxShadow: "0 0 0 10px rgba(99,102,241,.05)",
           }}
         />
-      </div> */}
+      </div>
       </div>
 
       {/* Stat cards — desktop only */}
@@ -1215,9 +1215,9 @@ function Contact({ profile }) {
                       Endpoint: <span style={{ color: "rgba(255,255,255,.35)" }}>POST {BASE_URL}/contact</span>
 
                     </p> */}
-                    <div className="">
+                   {/* <div className=""> */}
                       {/* <img src="profile-photo.png"/> */}
-                      <img
+                      {/* <img
           src="/profile-photo.png"
           alt={profile?.fullName ? `Portrait of ${profile.fullName}` : "Profile photo"}
           style={{
@@ -1229,8 +1229,8 @@ function Contact({ profile }) {
             boxShadow: "0 0 0 10px rgba(99,102,241,.05)",
             marginLeft: "100px",
           }}
-        />
-                    </div>
+        /> */}
+                    {/* </div>  */}
         </div>
       </div>
     </section>
