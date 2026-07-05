@@ -668,7 +668,7 @@ const role = useTypewriter([
 
 
         </div>
-        
+
 
         {/* Stack pills */}
         <div style={{ marginTop: 52, display: "flex", alignItems: "center", gap: 14, flexWrap: "wrap", ...anim(1.1) }}>
@@ -1218,7 +1218,7 @@ function Contact({ profile }) {
                     <div className="">
                       {/* <img src="profile-photo.png"/> */}
                       <img
-          src="profile-photo.png"
+          src="/profile-photo.png"
           alt={profile?.fullName ? `Portrait of ${profile.fullName}` : "Profile photo"}
           style={{
             width: "clamp(250px,28vw,360px)",
