@@ -1126,10 +1126,10 @@ function Contact({ profile }) {
           </p>
 
           {/* API badge */}
-          <div style={{ background: "rgba(109,179,63,.06)", border: "1px solid rgba(109,179,63,.2)", padding: "12px 16px", marginBottom: 16, fontSize: 10, color: "rgba(109,179,63,.8)", lineHeight: 1.7 }}>
+          {/* <div style={{ background: "rgba(109,179,63,.06)", border: "1px solid rgba(109,179,63,.2)", padding: "12px 16px", marginBottom: 16, fontSize: 10, color: "rgba(109,179,63,.8)", lineHeight: 1.7 }}>
             🍃 <strong>Backend by Spring Boot + PostgrSQL</strong><br />
                 ••• Message are stored securely and I'm notified by email.
-          </div>
+          </div> */}
 
           {/* WhatsApp card */}
           {profile?.phone && (
@@ -1176,7 +1176,7 @@ function Contact({ profile }) {
 
         {/* RIGHT — Form */}
         <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+           {/* <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
             {[["name", "Name *"], ["email", "Email *"]].map(([n, p]) => (
               <input key={n} name={n} placeholder={p} value={form[n]} onChange={handle}
                 style={inp}
@@ -1213,7 +1213,23 @@ function Contact({ profile }) {
                     <p style={{ fontSize: 10, color: "rgba(255,255,255,.18)", lineHeight: 1.7 }}>
                       Endpoint: <span style={{ color: "rgba(255,255,255,.35)" }}>POST {BASE_URL}/contact</span>
 
-                    </p>
+                    </p> */}
+                    <div className="">
+                      {/* <img src="profile-photo.png"/> */}
+                      <img
+          src="profile-photo.png"
+          alt={profile?.fullName ? `Portrait of ${profile.fullName}` : "Profile photo"}
+          style={{
+            width: "clamp(250px,28vw,360px)",
+            height: "clamp(250px,28vw,360px)",
+            borderRadius: "50%",
+            objectFit: "cover",
+            border: "2px solid rgba(99,102,241,.35)",
+            boxShadow: "0 0 0 10px rgba(99,102,241,.05)",
+            marginLeft: "100px",
+          }}
+        />
+                    </div>
         </div>
       </div>
     </section>
